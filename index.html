@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="">
+  <meta name="viewport">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.1.6/chance.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"></script>
+  <title>Learn2Mock</title> 
+  <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: center;    
+        height: 30vh;    
+        align-items: center;    
+      }
+      button {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 5px 10px;
+        background-color: white;
+      } 
+      input {
+        margin: 0 10px 0 5px;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 5px 10px;
+        background-color: white;
+      } 
+      .todo_list {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: center;        
+        align-items: center;
+        width: 100%;
+      }    
+      #todo_list {
+        width: 50%;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">    
+    <div>
+      <label>Todos count</label>
+      <input id="todos" type="number" min="0" max="1000">
+    </div>
+    <div>
+      <button value="show" id="todo-but">Generate Todos</button>      
+    </div>    
+  </div>
+  <div class="todo_list">
+    <p id="todo_list"></p>
+  </div>
+<script type="text/javascript" src="./Models/Learn2Mock.js"></script>
+<script type="text/javascript" src="./Models/TodoModel.js"></script>
+<script type="text/javascript" src="./utils.js"></script>
+<script type="text/javascript" src="./script.js"></script>
+</body>  
+</html> 
